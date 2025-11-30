@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vk-video-bot
+    env: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: VK_TOKEN
+        value: vk1.a.baU5TeMOTHHGe8v_GZa3bwyVJC-MHZxdAw-pSlLc0schXTay_QRhcNsG7TNtAB6_faQ3XSHIU2y90o-9-o9_OIBaQxBj8RZgoLKNd--qq27p7mLFmU92lQMg2cJGMc4pVxdgCWj4OFcRVA3LpG4xeOYLNE8Ie0-1NXcM33H2cxjZHxS7-j6U-k-dUjV2LnSkzJaoJl145omgXKwHU9SE7Q
+      - key: VK_GROUP_ID
+        value: 152915338
+      - key: PORT
+        value: 5000
